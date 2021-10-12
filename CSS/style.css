@@ -25,14 +25,46 @@ nav li{
     height: 800px;
 	padding: 80px 0px;
 }
+.wrapper
+{
+	padding-bottom: 90px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+.frame {  
+    height: 160px; /*can be anything*/
+    width: 160px; /*can be anything*/
+    position: relative;
+}
 #carouselExampleCaptions img{
 
-    left: auto;
-    right: 0px;
-    height: 600px;
-    width: 100%;
-    background-size: cover;
-    top: 4px;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
 #third{
 
