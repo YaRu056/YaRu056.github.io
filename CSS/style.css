@@ -48,11 +48,7 @@ nav li{
 	height: 1px;
 	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
-.frame {  
-    height: 160px; /*can be anything*/
-    width: 160px; /*can be anything*/
-    position: relative;
-}
+
 #carouselExampleCaptions img{
 
     max-height: 100%;  
