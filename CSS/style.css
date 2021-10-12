@@ -1,0 +1,46 @@
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Noto Sans TC',sans-serif;
+}
+p,a,span,li,label{
+	font-family: 'Open Sans', sans-serif;
+}
+#intro .jumbotron{
+
+    height:70vh;
+}
+#intro .jumbotron .container{
+	position:relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header nav img{
+    width: 175px;
+}
+nav li{
+    margin: 0 13px;
+}
+#second{
+
+    height: 800px;
+	padding: 80px 0px;
+}
+#carouselExampleCaptions img{
+
+    left: auto;
+    right: 0px;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    top: 4px;
+}
+#third{
+
+    height: 800px;
+	padding: 80px 0px;
+}
+#fourth{
+
+    height: 800px;
+	padding: 80px 0px;
+}
