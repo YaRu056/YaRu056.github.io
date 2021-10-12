@@ -5,9 +5,18 @@ h1,h2,h3,h4,h5,h6{
 p,a,span,li,label{
 	font-family: 'Open Sans', sans-serif;
 }
-#intro .jumbotron{
+img{
+	max-width:100%;
+}
 
-    height:70vh;
+#intro .jumbotron{
+	background: url('../Pictures/mainbg.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 70vh;
+    margin-bottom: 0px;
+
 }
 #intro .jumbotron .container{
 	position:relative;
@@ -20,9 +29,15 @@ header nav img{
 nav li{
     margin: 0 13px;
 }
+nav li a{
+
+    font-family: 'IM Fell English SC', sans-serif;
+    font-size: 20px;
+}
+
 #intro img{
 	border-radius: 100%;
-    width: 108px;
+    width: 150px;
 }
 #intro h5{
 	margin-top: 22px;
@@ -34,7 +49,7 @@ p.lead{
 }
 #second{
 
-    height: 800px;
+    height: 600px;
 	padding: 80px 0px;
 }
 .wrapper
@@ -61,19 +76,46 @@ p.lead{
 	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
 
-#carouselExampleCaptions img{
+#second h5{
 
-    max-height: 100%;  
-    max-width: 100%; 
-    width: auto;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
+	font-size: 20px;
 }
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 23%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-inner > .item > img {
+    height:400px;
+    max-width: 100%; 
+    position: absolute; 
+  }
+  .img1 {
+    background-image: url('../Pictures/BG.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;   
+    background-position: center !important;
+   }
+
 #third{
 
     height: 600px;
@@ -84,6 +126,7 @@ p.lead{
     background: rgb(248, 248, 248);
     padding: 80px 0px;
 }
+
 .card-deck{
 
     margin-bottom: 20px;
@@ -92,7 +135,10 @@ p.lead{
 
     border-radius: 7%;
     text-align: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+	padding: 0px;
+	margin: 0 5px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .card img{
 
@@ -139,3 +185,33 @@ p.lead{
     opacity: 1;
     right: 0;
   }
+footer{
+	border-top: 1px solid rgba(0,0,0,0.09);
+    padding: 10px;
+}
+footer h4{
+	font-size: 20px;
+    margin-bottom: 35px;
+
+}
+
+footer a{
+	color:#f05f5c;
+}
+footer a:hover{
+	color:#f05f5c;
+}
+
+  @media only screen and (max-width: 768px) {
+	#intro h5 {
+	    margin-bottom: 50px;
+	}
+	#fourth .card{
+		margin-bottom: 60px;
+	}
+	footer h4 {
+	    font-size: 17px;
+	    margin-top: 30px;
+	    margin-bottom: 18px;
+	}
+}
