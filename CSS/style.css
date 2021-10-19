@@ -148,18 +148,7 @@ header{
         opacity: 1;
     }
 }
-/*Responsive */
-@media (max-width: 600px){
-    .banner-text p{
-        display: none;
-    }
-    .navbar-dark{
-        background-color: #333;
-    }
-    .text-area{
-        font-size: 35px;
-    }
-}
+
 
 nav li{
     margin: 0 13px;
@@ -236,12 +225,8 @@ p.lead{
     list-style: none;
 }
 
-.carousel-inner > .item > img {
-    height:400px;
-    max-width: 100%; 
-    position: absolute; 
-  }
-  .img1 {
+
+.img1 {
     background-image: url('../Pictures/BG.png');
     height: 100%;
     width: 100%;
@@ -249,7 +234,7 @@ p.lead{
     background-attachment: fixed !important;
     background-size: cover !important;   
     background-position: center !important;
-   }
+}
 
 #third{
 
@@ -265,6 +250,7 @@ p.lead{
 .card-deck{
 
     margin-bottom: 20px;
+    
 }
 .card{
 
@@ -338,14 +324,42 @@ footer a{
 footer a:hover{
 	color:#f05f5c;
 }
+/*Responsive */
+@media (max-width: 600px){
+    .banner-text p{
+        display: none;
+    }
+    .navbar-dark{
+        background-color: #333;
+    }
+    .text-area{
+        font-size: 35px;
+    }
+    
+    .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: .5rem;
+    }
 
-@media only screen and (max-width: 768px) {
+}
+@media (max-width: 768px) {
+
+    .text-area{
+        font-size: 45px;
+    }
 	#intro h5 {
 	    margin-bottom: 50px;
 	}
+
 	#fourth .card{
 		margin-bottom: 60px;
 	}
+    .card-deck {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: .5rem;
+    }
 	footer h4 {
 	    font-size: 17px;
 	    margin-top: 30px;
