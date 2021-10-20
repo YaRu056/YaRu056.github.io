@@ -624,7 +624,7 @@ footer a:hover{
     }
     .card:hover {
 
-        height: 400px;
+        height: 480px;
     }
     .card img{
 
@@ -649,7 +649,7 @@ footer a:hover{
         font-size: 40px;
     }
      #fourth{
-        height: 400vh;
+        height: 480vh;
     }
     #fourth .container {
         flex-wrap: wrap;
